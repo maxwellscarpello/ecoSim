@@ -180,8 +180,7 @@ class Creature:
             screen.blit(surf_vision, (self.x - self.vision, self.y - self.vision))
 
             ## VISION CONE ##
-
-
+        
             ## CREATURE ##
             # alive
             pygame.draw.circle(screen, (255, 255, 0), (int(self.x), int(self.y)), self.r)
@@ -204,7 +203,7 @@ def main():
 
     ## CREATURES
     creatures = []
-    for i in range(3): # number of creatures
+    for i in range(1): # number of creatures
         x = random.randint(0, WORLD_W)
         y = random.randint(0, WORLD_H)
         x, y = gen_clamp(x, y)
